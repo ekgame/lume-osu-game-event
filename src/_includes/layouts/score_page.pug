@@ -1,0 +1,13 @@
+extends ./base.pug
+
+block content
+   .flex.flex-col.h-full
+      .container.mx-auto
+         a.inline-block.p-3.font-bold(href="/") osu! Game Events 
+
+      hr.opacity-50
+
+      div
+         .pattern-background
+         .container.mx-auto.flex.p-4.justify-center
+            block pageContent

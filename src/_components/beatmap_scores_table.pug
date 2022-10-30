@@ -1,0 +1,15 @@
+
+div
+  .map-banner(style='background-image: url("https://assets.ppy.sh/beatmaps/' + game.beatmap.beatmapSetId + '/covers/cover.jpg")')
+    .font-bold.text-2xl.text-ellipsis.overflow-hidden.filter.drop-shadow-sm= game.beatmap.title
+    .font-bold.text-sm.text-ellipsis.overflow-hidden.filter.drop-shadow-sm= game.beatmap.artist
+    .font-bold.text-sm.text-ellipsis.overflow-hidden.filter.drop-shadow-sm= game.beatmap.version
+    .font-bold.text-xs.text-ellipsis.overflow-hidden.filter.drop-shadow-sm mapset by #{game.beatmap.creator}
+
+  table.leaderborad-table
+    tbody
+      each score, index in game.scores
+        tr
+          td.text-right.opacity-50.pr-2.w-0 ##{index + 1}
+          td.text-left.pl-2 #{score.player.username} #[span.rank-tag ##{score.player.rank}]
+          td.text-right #{formatNumber(score.score)}

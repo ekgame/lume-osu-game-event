@@ -1,0 +1,11 @@
+table.leaderborad-table.leaderborad-table-main
+  thead: tr
+    th.w-0
+    th.text-left.pl-2 Username
+    th.text-right.pr-2 Score
+  tbody
+    each score, index in scores
+      tr
+        td.text-right.opacity-50.pr-2 ##{index + 1}
+        td.text-left.pl-2 #{score.player.username} #[span.rank-tag ##{score.player.rank}]
+        td.text-right #{formatNumber(score.score)}
