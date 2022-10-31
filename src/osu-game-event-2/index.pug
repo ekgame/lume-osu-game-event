@@ -1,13 +1,13 @@
-extends ../../_includes/layouts/score_page.pug
+extends ../_includes/layouts/score_page.pug
 
 block head
-  title osu! Game Event #1
+  title osu! Game Event #2
 
 block pageContent
   .flex.flex-col.mt-11
-    h1(class="lg:text-7xl md:text-5xl text-3xl font-bold text-center"): a(href='/osu-game-event-1/') osu! Game Event #1
+    h1(class="lg:text-7xl md:text-5xl text-3xl font-bold text-center"): a(href='/osu-game-event-1/') osu! Game Event #2
     span(class="text-center mt-11 lg:p-11 subtitle-container")
-      | Players across 2 lobbies were absolutely smashing 3-5* maps (osu!standard). This was not a serious competition, but here's something for bragging rights. Hopefully we'll see more people next time!
+      | The second osu! Game Discord Event, held on 2022-10-31 - the Halloween night. 19 different maps were played over ~2.5 hours by players across two lobbies. The Halloween themed maps started at 4.5* and ramped up to 7.5* by the end.
 
     .mt-11
       | !{comp.game_placements({first: totalScores[0], second: totalScores[1], third: totalScores[2]})}

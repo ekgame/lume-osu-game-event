@@ -17,4 +17,4 @@ block pageContent
   
     .individual-map-grid.mt-11
       each game in beatmapScores
-        | !{comp.beatmap_scores_table({game: game})}
+        | !{comp.beatmap_scores_table({game: game, mode: 'mania'})}

@@ -141,7 +141,13 @@ html, body {
     position: relative;
     overflow: hidden;
     background-size: cover;
-    background-position: center
+    background-position: center;
+    display: block;
+    text-decoration: none;
+
+    &:hover .map-banner-title {
+        text-decoration: underline;
+    }
 }
 
 .map-banner:before {
